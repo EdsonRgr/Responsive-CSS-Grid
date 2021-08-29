@@ -1,2 +1,12 @@
-# Responsive-CSS-Grid
-Seguindo tutorial do yt
+## Responsive CSS Grid
+
+<p>Aprendendo a usar o CSS grid</p>
+
+
+
+
+
+
+
+
+
