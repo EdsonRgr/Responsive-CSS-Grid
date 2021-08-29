@@ -1,0 +1,111 @@
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+}
+
+.container{
+    display: grid;
+    height:100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+    grid-gap: 0.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: aliceblue;
+    text-align: center;
+}
+
+
+nav{
+    background: #01497C ;
+    grid-area: nav; 
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding) ;
+
+}
+main{
+    background: #1E6091 ;
+    grid-area: main; 
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding) ;
+}
+#sidebar{
+    background: #1A759F;
+    grid-area: sidebar;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding) ;
+}
+#content1{
+    background: #168AAD;
+    grid-area: content1;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding) ;
+}
+#content2{
+    background: #34A0A4;
+    grid-area: content2;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding) ;
+}
+#content3{
+    background: #52B69A;
+    grid-area: content3;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding) ;
+}
+footer{
+    background: #012A4A;
+    grid-area: footer;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding) ;
+}
+
+@media only screen and (max-width: 550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+    }
+}
+
+ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #013A63;
+    border-bottom-left-radius: var(--main-radius);
+    border-bottom-right-radius: var(--main-radius);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #01497C;
+  }
